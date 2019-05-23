@@ -14,8 +14,6 @@ body {
 
 
 .searchBox {
-
-
     float: left;
     height: 20%;
 }
@@ -73,9 +71,6 @@ body {
     height: inherit;
     width: auto;
 }
-
-
-
 
 .form-control-borderless {
     border: none;
