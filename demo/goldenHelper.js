@@ -10,10 +10,14 @@ $("#goldenHelperSaveChangesButton").click(function () {
     $('html, body').css('font-family', textStyle);
     $(".title").css('font-size', textSize * 1.5);
     $('html, body').css('font-size', textSize);
-    console.log(textStyle);
-    console.log(textSize);
 
 })
+
+function resizeInputs(newSize) {
+    $(".title").css('font-size', textSize * 1.5);
+    $('html, body').css('font-size', textSize);
+    $("#searchBar").css('font-size', textSize * 1.5);
+}
 
 
 function extractStringFromSelect(id) {

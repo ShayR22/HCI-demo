@@ -2,7 +2,6 @@ $(document).ready(function () {
     console.log("page uploaded");
     $("#resultScreen").hide();
 
-
     $("#searchButton").click(function () {
         console.log("search button clicked");
 
