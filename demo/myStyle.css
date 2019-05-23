@@ -12,7 +12,10 @@ body {
     height: 20%;
 }
 
+
 .searchBox {
+
+
     float: left;
     height: 20%;
 }
@@ -21,11 +24,31 @@ body {
     display: inline;
 }
 
+
+#backToSearchScreen {
+    display: block;
+    position: relative;
+    width: 31%;
+    float: left;
+    top: 0;
+    height: 20%;
+}
+
+.list-group {
+    width: 70%;
+    position: relative;
+    margin-top: 20px;
+    padding-top: 20px;
+
+}
+
 #goldenHelperButton {
-    width: 22%;
+    position: fixed;
+    /* make element above all other elements */
+    z-index: 99999;
+    width: 30%;
     right: 0;
     top: 0;
-    position: fixed;
 }
 
 .card {
