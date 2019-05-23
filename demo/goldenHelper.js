@@ -8,15 +8,25 @@ $("#goldenHelperSaveChangesButton").click(function () {
     var textSize = extractInt("model-font-style-input");
 
     $('html, body').css('font-family', textStyle);
-    $(".title").css('font-size', textSize * 1.5);
-    $('html, body').css('font-size', textSize);
+    if (textSize != undefined) {
+        var number = Math.min(Math.max(textSize, 10), 30);
+        resizeInputs(number);
+    }
+
 
 })
 
+$("#goldenHelperButton").click(function () {
+
+    $("#model-font-style-input").val('');
+})
+
 function resizeInputs(newSize) {
-    $(".title").css('font-size', textSize * 1.5);
-    $('html, body').css('font-size', textSize);
-    $("#searchBar").css('font-size', textSize * 1.5);
+    $(".title").css('font-size', newSize * 1.5);
+    $('html, body').css('font-size', newSize);
+    $("#searchBar").css('font-size', newSize * 1.5);
+    $("#loginPageUsername").css('font-size', newSize)
+    $("#loginPagePassword").css('font-size', newSize);
 }
 
 
