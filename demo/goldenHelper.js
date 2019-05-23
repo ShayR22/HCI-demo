@@ -22,10 +22,13 @@ $("#goldenHelperButton").click(function () {
 })
 
 function resizeInputs(newSize) {
-    $(".title").css('font-size', newSize * 1.5);
+    //all
     $('html, body').css('font-size', newSize);
+
+    //  
+    $(".title").css('font-size', newSize * 1.5);
     $("#searchBar").css('font-size', newSize * 1.5);
-    $("#loginPageUsername").css('font-size', newSize)
+    $("#loginPageUsername").css('font-size', newSize);
     $("#loginPagePassword").css('font-size', newSize);
 }
 

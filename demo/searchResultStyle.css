@@ -19,7 +19,7 @@ body {
 }
 
 .modal-body h5 {
-    display: inline;
+    display: block;
 }
 
 

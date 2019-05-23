@@ -7,6 +7,12 @@
     top: 0;
 }
 
+
+.modal-body h5 {
+    display: block;
+}
+
+
 .send-button {
     background: #54C7C3;
     width: 100%;

@@ -9,6 +9,16 @@
     top: 0;
 }
 
+
+.modal-body h5 {
+    display: block;
+}
+
+
+#iconUser {
+    width: 20%;
+}
+
 html {
     background-color: #56baed;
 }
