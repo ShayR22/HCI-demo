@@ -3,7 +3,6 @@ $(document).ready(function () {
     $("#resultScreen").hide();
 
     $("#searchButton").click(function () {
-        console.log("search button clicked");
 
         //TODO get search querys (Search For and Sort by)
         $("#searchScreen").hide();
