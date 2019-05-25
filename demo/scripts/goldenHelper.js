@@ -10,9 +10,12 @@ $("#goldenHelperSaveChangesButton").click(function () {
     $('html, body').css('font-family', textStyle);
     if (textSize != undefined) {
         var number = Math.min(Math.max(textSize, 10), 30);
+        localStorage.setItem("textSize", textSize);
         resizeInputs(number);
     }
 });
+
+
 
 $("#goldenHelperButton").click(function () {
     $("#model-font-style-input").val('');

@@ -17,5 +17,12 @@ $(document).ready(function () {
         $("#searchScreen").show();
     })
 
+    if (localStorage.hasOwnProperty("textSize")) {
+        console.log("local storage has textSize prop")
+        var number = parseInt(localStorage.getItem("textSize"));
+        resizeInputs(number);
+    } else {
+        console.log("local storage doesnt has textSize prop");
+    }
 
 })

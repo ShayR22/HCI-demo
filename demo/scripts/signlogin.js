@@ -20,6 +20,7 @@ $("#loginPageLogin").click(function () {
 
 })
 
+
 $("#loginPageSignUp").click(function () {
     window.location = "signup.html";
 })
