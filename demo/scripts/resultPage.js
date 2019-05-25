@@ -1,7 +1,5 @@
 function generateData(search, searchSubject, sortBy) {
 
-
-
 }
 
 $(".list-group a").click(function () {

@@ -18,6 +18,18 @@ body {
     height: 20%;
 }
 
+.modal-body {
+    width: auto;
+}
+
+.modal-radio {
+    padding: auto;
+}
+
+.modal-label {
+    padding: auto;
+}
+
 .modal-body h5 {
     display: block;
 }

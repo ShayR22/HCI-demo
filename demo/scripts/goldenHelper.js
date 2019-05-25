@@ -5,21 +5,18 @@ $('#myModal').on('shown.bs.modal', function () {
 
 $("#goldenHelperSaveChangesButton").click(function () {
     var textStyle = extractStringFromSelect("model-font-style-section");
-    var textSize = extractInt("model-font-style-input");
+    var textSize = extractInt("font-size-radio");
 
     $('html, body').css('font-family', textStyle);
     if (textSize != undefined) {
         var number = Math.min(Math.max(textSize, 10), 30);
         resizeInputs(number);
     }
-
-
-})
+});
 
 $("#goldenHelperButton").click(function () {
-
     $("#model-font-style-input").val('');
-})
+});
 
 function resizeInputs(newSize) {
     //all
@@ -37,13 +34,15 @@ function extractStringFromSelect(id) {
     return $("#" + id + " option:selected").val();
 }
 
-function extractInt(id) {
-    var numStr = $("#" + id).val();
+function extractInt(radioButtonName) {
+    var numStr = $("input[name='" + radioButtonName + "']:checked").val();
+    console.log("value is: " + numStr);
+
     var number = parseInt(numStr);
-    if (isNaN(number)) {
-        $("#" + id).text("Please enter a number here");
-        return undefined;
+    if (isNaN(numStr)) {
+        console.log("Error on radio button given, value is not a number");
     } else {
         return number;
     }
+
 }

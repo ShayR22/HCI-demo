@@ -13,7 +13,7 @@ $("#loginPageLogin").click(function () {
 
     console.log(usernameInput + " " + passwordInput);
     if (username == usernameInput && password == passwordInput) {
-        window.location.href = "mainPage.html";
+        window.location.href = "searchAndResultPages.html";
     } else {
         alert("Wrong username or password");
     }
