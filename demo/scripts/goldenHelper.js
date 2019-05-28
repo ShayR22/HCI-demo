@@ -9,6 +9,13 @@ $(document).ready(function () {
 })
 
 
+$(".goldenListGroup .list-group a").click(function () {
+    $(".goldenListGroup .list-group a").each(function () {
+        $(this).attr("class", "list-group-item list-group-item-action")
+    })
+    $(this).attr("class", "list-group-item list-group-item-action active")
+})
+
 
 
 $('#myModal').on('shown.bs.modal', function () {
@@ -19,6 +26,7 @@ $('#myModal').on('shown.bs.modal', function () {
 $("#goldenHelperSaveChangesButton").click(function () {
     var textStyle = extractStringFromSelect("model-font-style-section");
     var textSize = extractInt("font-size-radio");
+    console.log("text size is: " + textSize);
 
     $('html, body').css('font-family', textStyle);
     if (textSize != undefined) {
@@ -51,13 +59,19 @@ function extractStringFromSelect(id) {
 }
 
 function extractInt(radioButtonName) {
-    var numStr = $("input[name='" + radioButtonName + "']:checked").val();
-    console.log("value is: " + numStr);
-
-    var number = parseInt(numStr);
-    if (isNaN(numStr)) {
-        console.log("Error on radio button given, value is not a number");
-    } else {
-        return number;
-    }
+    var number;
+    $(".goldenListGroup .list-group a").each(function () {
+        if ($(this).attr("class") == "list-group-item list-group-item-action active") {
+            var textSize = $(this).attr("value");
+            console.log("text size is: " + textSize);
+            number = parseInt(textSize);
+            if (isNaN(number)) {
+                console.log("Error on radio button given, value is not a number");
+            } else {
+                return;
+            }
+            return;
+        }
+    });
+    return number;
 }
