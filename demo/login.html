@@ -1,49 +1,56 @@
-<!DOCTYPE html>
-<html>
-<!--TODO add something that will address what this website is about for first comers-->
+<!doctype html>
+<html lang="en">
 
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title> Login </title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/sign-in/">
+
+    <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="cssStyles/loginStyle.css">
+    <link rel="stylesheet" type="text/css" href="cssStyles/newLogin.css">
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
 
+        @media (min-width: 1000px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" type="text/css" href="cssStyles/newLogin.css">
 </head>
 
-<body>
-
-    <!-------- Login Div -------------->
-    <div id="loginDiv">
-        <div class="wrapper fadeInDown">
-            <div id="formContent">
-                <!-- Tabs Titles -->
-
-                <!-- Icon -->
-                <div class="fadeIn first">
-                    <img src="resource/images/userlogo.jpeg" id="iconUser" alt="User Icon" />
-                </div>
-
-                <!-- Login Form -->
-                <form>
-                    <input type="text" id="loginPageUsername" class="fadeIn second" name="login"
-                        placeholder="enter username">
-                    <input type="text" id="loginPagePassword" class="fadeIn third" name="login"
-                        placeholder="enter password">
-
-                    <input type="button" id="loginPageLogin" class="fadeIn fourth" value="Regular Login">
-                    <input type="button" id="loginPageGuest" class="fadeIn fourth" value="Login As Guest">
-                    <input type="button" id="loginPageSignUp" class="fadeIn fourth" value="    Free Signup    ">
-
-                </form>
-
-                <!-- Remind Passowrd -->
-                <div id="formFooter">
-                    <a class="underlineHover" href="#">Forgot Password?</a>
-                </div>
-
-            </div>
+<body class="text-center">
+    <form class="form-signin">
+        <img src="/resource/images/userlogo.jpeg" alt="User Logo" width="100" height="100">
+        <h1 class="h3 mb-3 font-weight-normal">Login</h1>
+        <label for="inputUsername" class="sr-only"> Username</label>
+        <input type="text" id="inputUsername" class="form-control" placeholder="Username" required autofocus>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+        <div class="checkbox mb-3">
         </div>
-    </div>
+        <div class="row">
+            <button id="loginPageLogin" class="btn btn-sm btn-primary btn-block" type="submit"> Regular Login </button>
+            <button id="loginPageGuest" class="btn btn-sm btn-primary btn-block" type="submit"> Guest Login </button>
+            <button id="loginPageSignUp" class="btn btn-sm btn-primary btn-block" type="submit"> SignUp </button>
+        </div>
+    </form>
+
 
 
     <button type="button" id="goldenHelperButton" class="btn btn-primary" data-toggle="modal" data-target="#myModel">
@@ -72,7 +79,7 @@
 
                     <h5 class="model-font-size-label"> Font Size </h5>
                     <!-- <input type="text" id="model-font-style-input" placeholder="put 10-30">
-                                -->
+                            -->
                     <div class="goldenListGroup">
                         <div class="list-group">
                             <a href="#" class="list-group-item list-group-item-action" value="10">
@@ -102,8 +109,6 @@
         </div>
 
 
-
-
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
             integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
         </script>
@@ -116,9 +121,6 @@
 
         <script src="scripts/goldenHelper.js"></script>
         <script src="scripts/login.js"></script>
-
 </body>
-
-
 
 </html>
