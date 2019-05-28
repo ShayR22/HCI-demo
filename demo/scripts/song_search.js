@@ -5,7 +5,7 @@ $(document).ready(function () {
     });
 
 
-    $("a").click(function () {
+    $("col-5 center a").click(function () {
         console.log("fml");
         var yearVal = $(this).attr("value");
         localStorage.setItem("yearValue", yearVal);
