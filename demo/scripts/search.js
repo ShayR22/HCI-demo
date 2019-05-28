@@ -1,5 +1,5 @@
-$(document).ready(function(){
-    $("#songSearch").click(function(){
-        document.location="search-songs/songs.html";
+$(document).ready(function () {
+    $("#songSearch").click(function () {
+        document.location = "songs.html";
     })
 })
