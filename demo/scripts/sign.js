@@ -11,7 +11,7 @@ $("#signupSignup").click(function () {
     } else {
         alert("please fill username and password");
     }
-})
+});
 
 function isEmptyData() {
     var usernameInput = $("#signupUsername").val();

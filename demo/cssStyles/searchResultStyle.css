@@ -12,7 +12,6 @@ body {
     height: 20%;
 }
 
-
 .searchBox {
     float: left;
     height: 20%;
@@ -61,9 +60,7 @@ body {
     top: 0;
 }
 
-.card {
-    width: 100%;
-}
+.card {}
 
 .form-check {
     display: flex;
@@ -75,7 +72,7 @@ body {
 
 .form-check-label {
     padding-right: 2%;
-    width: 10%;
+    width: 50%;
 }
 
 .form-check img {

@@ -2,107 +2,15 @@
 <html>
 
 <head>
-    <title>Awesome Search Box</title>
+    <title> Golden Age Search Engine </title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <link rel="stylesheet" href="cssStyles/searchResultStyle.css">
-
-
 </head>
 
 <body>
-    <!-------- SearchScreen Start ----------->
-    <div id="searchScreen">
-        <div id="searchBox" class="container">
-            <div class="row justify-content-left">
-                <div class="col-12 col-md-10 col-lg-8">
-                    <form class="card card-sm">
-                        <div class="card-body row no-gutters align-items-center">
-                            <div class="col-auto">
-                                <i id="search-box-body" class="fas fa-search h4 text-body"></i>
-                            </div>
-                            <!--end of col-->
-                            <div class="col">
-                                <input id="searchBar" class="form-control form-control-lg form-control-borderless"
-                                    type="search" placeholder="Search topics or keywords">
-                            </div>
-                            <!--end of col-->
-                            <div class="col-auto">
-                                <button type="button" id="searchButton" class="btn btn-lg btn-success">Search</button>
-                            </div>
-                            <!--end of col-->
-                        </div>
-                    </form>
-                </div>
-                <!--end of col-->
-            </div>
-        </div>
-
-        <br>
-
-        <div class="card">
-            <article class="card-group-item">
-                <header class="card-header">
-                    <h6 class="title">You Search For: </h6>
-                </header>
-                <div class="filter-content">
-                    <div class="card-body">
-                        <label class="form-check">
-                            <input class="form-check-input" type="radio" name="exampleRadio" value="">
-                            <span class="form-check-label"> Songs </span>
-                            <image src="resource/images/music_note.png"></image>
-                        </label>
-                        <label class="form-check">
-                            <input class="form-check-input" type="radio" name="exampleRadio" value="">
-                            <span class="form-check-label"> Books </span>
-                            <image src="resource/images/book.jpg"></image>
-                        </label>
-                        <label class="form-check">
-                            <input class="form-check-input" type="radio" name="exampleRadio" value="">
-                            <span class="form-check-label"> Televisions </span>
-                            <image src="resource/images/television.jpg"></image>
-                        </label>
-                    </div> <!-- card-body.// -->
-                </div>
-            </article> <!-- card-group-item.// -->
-
-
-            <article class="card-group-item">
-                <header class="card-header">
-                    <h6 class="title"> Sort By </h6>
-                </header>
-                <div class="filter-content">
-                    <div class="card-body">
-                        <form>
-                            <label class="form-check">
-                                <input class="form-check-input" type="radio" name="exampleRadio" value="">
-                                <span class="form-check-label"> Alpha-Bet </span>
-                                <image src="resource/images/alphaBet.jpg"></image>
-
-                            </label> <!-- form-check.// -->
-                            <label class="form-check">
-                                <input class="form-check-input" type="radio" name="exampleRadio" value="">
-                                <span class="form-check-label"> Date </span>
-                                <image src="resource/images/calendar.jpg"></image>
-                            </label> <!-- form-check.// -->
-                            <label class="form-check">
-                                <input class="form-check-input" type="radio" name="exampleRadio" value="">
-                                <span class="form-check-label"> Size </span>
-                                <image src="resource/images/sizeComp.jpg"></image>
-                            </label> <!-- form-check.// -->
-                        </form>
-
-                    </div> <!-- card-body.// -->
-                </div>
-            </article> <!-- card-group-item.// -->
-
-        </div> <!-- card.// -->
-    </div>
-    <!-------- SearchScreen End ----------->
-
-
     <!-------- resultScreen Start ----------->
     <div id="resultScreen">
 
@@ -138,6 +46,8 @@
     </div>
     <!-------- resultScreen End ----------->
 
+
+    <!-------- GOLDEN HELPER START -------->
     <button type="button" id="goldenHelperButton" class="btn btn-primary" data-toggle="modal" data-target="#myModel">
         <h3>Click to Change Font</h3>
     </button>
@@ -191,7 +101,7 @@
             </div>
         </div>
     </div>
-
+    <!-------- GOLDEN HELPER END -------->
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -204,7 +114,7 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
 
-    <script src="scripts/searchAndResultPagesModifier.js"></script>
+    <script src="scripts/result.js"></script>
     <script src="scripts/goldenHelper.js"></script>
     <script src="scripts/resultPage.js"></script>
 

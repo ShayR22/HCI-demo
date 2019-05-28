@@ -1,3 +1,16 @@
+$(document).ready(function () {
+    if (localStorage.hasOwnProperty("textSize")) {
+        console.log("local storage has textSize prop")
+        var number = parseInt(localStorage.getItem("textSize"));
+        resizeInputs(number);
+    } else {
+        console.log("local storage doesnt has textSize prop");
+    }
+})
+
+
+
+
 $('#myModal').on('shown.bs.modal', function () {
     $('#myInput').trigger('focus')
 })
@@ -47,5 +60,4 @@ function extractInt(radioButtonName) {
     } else {
         return number;
     }
-
 }
