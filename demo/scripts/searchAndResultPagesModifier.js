@@ -25,4 +25,10 @@ $(document).ready(function () {
         console.log("local storage doesnt has textSize prop");
     }
 
+
+    $("#songSearch").click(function(){
+        document.location="search-songs/songs.html";
+    })
+
 })
+
