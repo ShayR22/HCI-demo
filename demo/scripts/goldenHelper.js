@@ -23,7 +23,6 @@ $('#myModal').on('shown.bs.modal', function () {
 
 
 $("#goldenHelperSaveChangesButton").click(function () {
-    console.log("fml");
     var textStyle = extractStringFromSelect("model-font-style-section");
     var textSize = extractInt("font-size-radio");
     console.log("text size is: " + textSize);
