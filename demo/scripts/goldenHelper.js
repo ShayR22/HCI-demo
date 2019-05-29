@@ -6,7 +6,6 @@ $(document).ready(function () {
     } else {
         console.log("local storage doesnt has textSize prop");
     }
-})
 
 
 $(".goldenListGroup .list-group a").click(function () {
@@ -24,6 +23,7 @@ $('#myModal').on('shown.bs.modal', function () {
 
 
 $("#goldenHelperSaveChangesButton").click(function () {
+    console.log("fml");
     var textStyle = extractStringFromSelect("model-font-style-section");
     var textSize = extractInt("font-size-radio");
     console.log("text size is: " + textSize);
@@ -39,6 +39,7 @@ $("#goldenHelperSaveChangesButton").click(function () {
 
 
 $("#goldenHelperButton").click(function () {
+    console.log("fml");
     $("#model-font-style-input").val('');
 });
 
@@ -75,3 +76,5 @@ function extractInt(radioButtonName) {
     });
     return number;
 }
+})
+

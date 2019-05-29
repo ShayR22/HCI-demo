@@ -6,6 +6,9 @@ $(document).ready(function () {
         $(this).attr("class", "list-group-item list-group-item-action active")
     })
 
+    $("#backToSearchScreen").click(function () {
+        window.location= 'search.html';
+    })
 
 
 });
