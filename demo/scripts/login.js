@@ -22,16 +22,17 @@ $("#loginPageLogin").click(function () {
 
     console.log(usernameInput + ", " + passwordInput);
     if (username == usernameInput && password == passwordInput) {
-        window.location.href = "searchAndResultPages.html";
+        window.location.href = "search.html";
+        return true;
     } else {
         alert("Wrong username or password");
     }
 })
 
 $("#loginPageSignUp").click(function () {
-    window.location = "signup.html";
+    window.location.href = "signup.html";
 })
 
 $("#loginPageGuest").click(function () {
-    window.location = "search.html";
+    window.location.href = "search.html";
 })

@@ -1,19 +1,21 @@
-$(document).ready(function(){
+$(document).ready(function () {
     $("#signupSignup").click(function () {
         if (!isEmptyData()) {
             var username = $("#signupUsername").val();
             var password = $("#signupPassword").val();
             localStorage.setItem("username", username);
             localStorage.setItem("password", password);
-    
+
             console.log(username + " " + password);
-    
+
             window.location.href = "login.html";
+            return true;
         } else {
             alert("please fill username and password");
+            return false;
         }
     });
-    
+
 })
 
 function isEmptyData() {
