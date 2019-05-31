@@ -13,140 +13,24 @@
 
 <body>
     <div id="buttons_div">
-        <button id="backToSearchScreen" class="btn btn-primary">
-            <h3>Click Me to search again</h3>
-        </button>
-
-        <!-------- GOLDEN HELPER START -------->
-        <button type="button" id="goldenHelperButton" class="btn btn-primary" data-toggle="modal"
-            data-target="#myModel">
-            <h3>Click to Change Font</h3>
-        </button>
+            <br>
+        <a id="backToSearchScreen"  class="float-right btn btn-primary" href="search.html">
+            <h3>Search again</h3>
+        </a>
     </div>
-</br></br></br></br>
+</br></br>
 
     <!-------- resultScreen Start ----------->
     <div id="resultScreen" class="align-items-center">
 
         <div id="songs-results-title">
-            <h1 align="center" style="margin: 16pt">Search by 80's songs</h1>
-
-            <nav aria-label="breadcrumb" style="margin-left: 100pt; margin-right: 100pt">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">Songs</a></li>
-                    <li class="breadcrumb-item"><a href="#">Years</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">80's</li>
-                </ol>
-            </nav>
+            <h1 align="center" class="font-weight-bold" style="margin: 16pt">Result</h1>
         </div>
 
 
-        <div class="list-group" style="margin-left: 25%;margin-right: 25%">
+    
 
-            <a href="#" class="list-group-item list-group-item-action">
-                <div class="d-flex w-100 justify-content-between">
-                    <details>
-                        <summary>
-                            <h5 class="mb-1">Result 1</h5>
-                        </summary>
-                        <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus
-                            varius
-                            blandit.</p>
-                        <small>Donec id elit non mi porta.</small>
-                    </details>
-                </div>
-            </a>
-
-            <a href="#" class="list-group-item list-group-item-action">
-                <div class="d-flex w-100 justify-content-between">
-                    <details>
-                        <summary>
-                            <h5 class="mb-1">Result 2</h5>
-                        </summary>
-                        <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus
-                            varius
-                            blandit.</p>
-                        <small>Donec id elit non mi porta.</small>
-                    </details>
-                </div>
-            </a>
-
-            <a href="#" class="list-group-item list-group-item-action">
-                <div class="d-flex w-100 justify-content-between">
-                    <details>
-                        <summary>
-                            <h5 class="mb-1">Result 3</h5>
-                        </summary>
-                        <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus
-                            varius
-                            blandit.</p>
-                        <small>Donec id elit non mi porta.</small>
-                    </details>
-                </div>
-            </a>
-
-        </div>
-    </div>
-    <!-------- resultScreen End ----------->
-
-
-    <button type="button" id="goldenHelperButton" class="btn btn-primary" data-toggle="modal" data-target="#myModel">
-        <h3>Click to Change Font</h3>
-    </button>
-
-
-    <div class="modal fade" id="myModel" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Font Helper</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <h5 class="model-font-style-label"> Font Style </h5>
-                    <select id="model-font-style-section">
-                        <option value="Arial" selected> Arial </option>
-                        <option value="Courier New"> Courier New</option>
-                        <option value="Verdana"> Verdana </option>
-                    </select>
-                    <br>
-
-                    <h5 class="model-font-size-label"> Font Size </h5>
-                    <!-- <input type="text" id="model-font-style-input" placeholder="put 10-30">
-                            -->
-                    <div class="goldenListGroup">
-                        <div class="list-group">
-                            <a href="#" class="list-group-item list-group-item-action" value="10">
-                                <p class="mb-1"> Very Small </p>
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action" value="15">
-                                <p class="mb-1"> Small</p>
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action" value="20">
-                                <p class="mb-1"> Medium</p>
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action" value="25">
-                                <p class="mb-1"> Big</p>
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action" value="30">
-                                <p class="mb-1"> Very Big</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" id="goldenHelperSaveChangesButton" class="btn btn-primary">Save
-                            changes</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-------- GOLDEN HELPER END -------->
-
+ 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -158,11 +42,6 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
         </script>
-
-        <script src="scripts/result.js"></script>
-        <script src="scripts/goldenHelper.js"></script>
-
-
 </body>
 
 </html>
