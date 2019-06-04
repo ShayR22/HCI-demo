@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
     integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
+  <link rel="stylesheet" href="cssStyles/goldenHelper.css">
 
   <style>
     svg text {
@@ -184,6 +185,65 @@
 
 
 
+    <button type="button" id="goldenHelperButton" class="btn btn-primary" data-toggle="modal" data-target="#myModel">
+      <h3>Change Font</h3>
+    </button>
+
+
+    <div class="modal fade" id="myModel" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Font Helper</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <h5 class="model-font-style-label"> Font Style </h5>
+            <select id="model-font-style-section">
+              <option value="Arial" selected> Arial </option>
+              <option value="Courier New"> Courier New</option>
+              <option value="Verdana"> Verdana </option>
+            </select>
+            <br>
+
+            <h5 class="model-font-size-label"> Font Size </h5>
+            <!-- <input type="text" id="model-font-style-input" placeholder="put 10-30">
+                                      -->
+            <div class="goldenListGroup">
+              <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action" value="25">
+                  <p class="mb-1"> Defualt </p>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action" value="10">
+                  <p class="mb-1"> Very Small </p>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action" value="15">
+                  <p class="mb-1"> Small</p>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action" value="20">
+                  <p class="mb-1"> Medium</p>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action" value="25">
+                  <p class="mb-1"> Big</p>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action" value="30">
+                  <p class="mb-1"> Very Big</p>
+                </a>
+
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" id="goldenHelperSaveChangesButton" class="btn btn-primary">Save
+                changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
   </main>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -196,11 +256,12 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
   </script>
 
-
-
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
   </script>
+
+  <script src="scripts/goldenHelper.js"></script>
+
 </body>
 
 </html>

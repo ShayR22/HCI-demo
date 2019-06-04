@@ -3,36 +3,29 @@
 //     localStorage.clear();
 // })
 
+$(document).ready(function () {
+    $("#login").click(function () {
+        var usernameInput = $("#loginUsername").val();
+        var passwordInput = $("#loginPassword").val();
 
-$("#loginPageLogin").click(function () {
+        //TODO change by using method to search the enitre localStorage
+        var username = localStorage.getItem("username");
+        var password = localStorage.getItem("password");
+        console.log("username:" + username);
+        console.log("password:" + password);
+        //this assume nobody had register 
+        if (username === null || password === null) {
+            alert("User doesn't exist in the system");
 
-    var usernameInput = $("#loginPageUsername").val();
-    var passwordInput = $("#loginPagePassword").val();
+            return false;
+        }
 
-    //TODO change by using method to search the enitre localStorage
-    var username = localStorage.getItem("username");
-    var password = localStorage.getItem("password");
-
-    //this assume nobody had register 
-    if (username === null || password === null) {
-        console.log("FML");
-        alert("User doesn't exist in the system");
-        return false;
-    }
-
-    console.log(usernameInput + ", " + passwordInput);
-    if (username == usernameInput && password == passwordInput) {
-        window.location.href = "search.html";
-        return true;
-    } else {
-        alert("Wrong username or password");
-    }
-})
-
-$("#loginPageSignUp").click(function () {
-    window.location.href = "signup.html";
-})
-
-$("#loginPageGuest").click(function () {
-    window.location.href = "search.html";
-})
+        console.log(usernameInput + ", " + passwordInput);
+        if (username == usernameInput && password == passwordInput) {
+            window.location = "search.html";
+            return true;
+        } else {
+            alert("Wrong username or password");
+        }
+    })
+});

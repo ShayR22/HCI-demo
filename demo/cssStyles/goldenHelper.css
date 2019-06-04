@@ -1,0 +1,9 @@
+#goldenHelperButton {
+    position: fixed;
+    /* make element above all other elements */
+    z-index: 99999;
+    width: 30%;
+    right: 0;
+    top: 0;
+    margin-top: 15px;
+}

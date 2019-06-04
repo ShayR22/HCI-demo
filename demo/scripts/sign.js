@@ -8,7 +8,7 @@ $(document).ready(function () {
 
             console.log(username + " " + password);
 
-            window.location.href = "login.html";
+            window.location = "login.html";
             return true;
         } else {
             alert("please fill username and password");
