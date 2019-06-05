@@ -5,6 +5,8 @@ $(document).ready(function () {
         resizeInputs(number);
     } else {
         console.log("local storage doesnt has textSize prop");
+        console.log("doing default value");
+        resizeInputs(20);
     }
 
 
