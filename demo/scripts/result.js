@@ -3,7 +3,7 @@ $(document).ready(function () {
     var searchFor = localStorage.getItem("searchFor");
     var searchCatergory = localStorage.getItem("searchCategory");
     var searchSubCategory = localStorage.getItem("searchSubCategory");
-    generateData(searchFor, searchCatergory, searchSubCategory);
+    // generateData(searchFor, searchCatergory, searchSubCategory);
     $("#dataGenerated .list-group a").click(function (e) {
         e.preventDefault();
         $("#dataGenerated .list-group a").each(function () {
@@ -40,7 +40,6 @@ function generateData(searchFor, searchCategory, searchSubCategory) {
         </div> \
         <p class='mb-1'>Details</p> \
     </a> \
-</div> \
 </div> \
         ");
 
