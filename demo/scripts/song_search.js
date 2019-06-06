@@ -21,19 +21,19 @@ $(document).ready(function () {
 
     $('#myList1 a').on('shown.bs.tab', function (e) {
         localStorage.setItem("searchSubCategory", $(this).text());
-        window.location.assign('/result.html');
+        window.location.assign('./result.html');
         $(e.relatedTarget).removeClass('active'); // previous active tab
     })
 
     $('#myList2 a').on('shown.bs.tab', function (e) {
         localStorage.setItem("searchSubCategory", $(this).text());
-        window.location.assign('/result.html');
+        window.location.assign('./result.html');
         $(e.relatedTarget).removeClass('active'); // previous active tab
     })
 
     $('#myList3 a').on('shown.bs.tab', function (e) {
         localStorage.setItem("searchSubCategory", $(this).text());
-        window.location.assign('/result.html');
+        window.location.assign('./result.html');
         $(e.relatedTarget).removeClass('active'); // previous active tab
     })
 
